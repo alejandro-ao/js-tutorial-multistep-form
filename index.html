@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="form-wrapper">
+      <div id="multistep-form" class="form" data-page="1" data-max-page="3">
+        <div class="form__header">
+          <h1>Multi Step Form</h1>
+          <div class="progress-bar">
+            <div class="page-step active" data-page="1">1</div>
+            <div class="page-step" data-page="2">2</div>
+            <div class="page-step" data-page="3">3</div>
+          </div>
+        </div>
+
+        <form class="form__body">
+          <div class="form__page active" data-page="1">
+            <input type="text" placeholder="name" />
+            <input type="text" placeholder="lastname" />
+            <input type="text" placeholder="email" />
+            <div class="form__buttons">
+              <button class="btn-form btn-next">Next</button>
+            </div>
+          </div>
+
+          <div class="form__page" data-page="2">
+            <input type="text" placeholder="address" />
+            <input type="text" placeholder="address complement" />
+            <div class="form__buttons">
+              <button class="btn-form btn-prev">Previous</button>
+              <button class="btn-form btn-next">Next</button>
+            </div>
+          </div>
+
+          <div class="form__page" data-page="3">
+            <input type="text" placeholder="comments" />
+            <input type="text" placeholder="other info" />
+            <input type="text" placeholder="more info" />
+            <div class="form__buttons">
+              <button class="btn-form btn-prev">Previous</button>
+              <button class="btn-form btn-submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
